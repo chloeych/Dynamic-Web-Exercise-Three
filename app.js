@@ -7,6 +7,7 @@ const port = 4000; // number
 
 const indexRoute = require("./routes/index.js"); 
 const aboutRoute = require("./routes/about.js"); 
+const frogRoute = require("./routes/frogs.js)");
 
 // Serve Static Files
 
@@ -16,6 +17,7 @@ app.use("/static", express.static("public"));
 // path and callback function
 app.use("/", indexRoute); 
 app.use("/about", aboutRoute); 
+app.use("/frogs", frogRoute);
 
 // app:{
 //     get: function(path, callback)
